@@ -1,0 +1,17 @@
+.BtnList {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+}
+
+.BtnLogin, .BtnSearch, .BtnShopper {
+    background-color: none;
+    border: none;
+    cursor: pointer;
+    height: unset;
+    position: relative;
+    transform: scale(1.4);
+    width: unset;
+}
