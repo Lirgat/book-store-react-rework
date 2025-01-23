@@ -1,9 +1,12 @@
 import React, { FC, JSX } from "react";
 import style from "./style.module.css"
+import { CompanyNameTypeProp } from "../../../Models/Header/client";
 
-const CompanyLogo:FC = ():JSX.Element => {
+// Фактически это глупый компонент, но я его решил засунуть в UI
+
+const CompanyLogo:FC<CompanyNameTypeProp> = ({page}):JSX.Element => {
     return(
-        <h1 className={style.CompanyLogo}>Bookshop</h1>
+        <h1 className={style.CompanyLogo}>Bookshop | {page}</h1>
     )
 }
 

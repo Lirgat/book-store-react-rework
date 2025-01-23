@@ -5,6 +5,9 @@ import {
   routerLinksArrayType,
 } from "../../../Models/Header/client";
 
+// Компонент линков для роутинга в заголовке,
+// вынес в массив объектов, чтобы было удобнее редачить
+
 const RoutingLinks: FC = (): JSX.Element => {
   const routingLinksArray: routerLinksArrayType = [
     {

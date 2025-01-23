@@ -1,0 +1,43 @@
+.PinkSticker {
+    background-color: #ff8fe6;
+    bottom: 10%;
+    box-shadow: 0 27px 8px -14px rgba(81, 87, 92, .29);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    height: 273px;
+    padding: 0 47px 20px 20px;
+    position: absolute;
+    right: -13%;
+    transition: .3s;
+    z-index: 100;
+}
+
+.PurpleSticker {
+    background-color: #9e98dc;
+    box-shadow: 0 27px 8px -14px rgba(81, 87, 92, .29);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    height: 204px;
+    padding: 20px;
+    position: absolute;
+    right: -8%;
+    top: 6%;
+    transition: .3s;
+    z-index: 100;
+}
+
+.PurpleSticker:hover {
+    background-color: #b7b0ff;
+    transform: scale(1.05);
+}
+
+.PinkSticker, .PurpleSticker {
+    max-width: 150px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: flex-end;
+}

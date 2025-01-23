@@ -1,4 +1,8 @@
-const indexCheck = (state, index, style) => {
+import { indexCheckUtilType } from "./utilsTypes"
+
+// Сравнение с индексом, добавление/удаление класса
+
+const indexCheck:indexCheckUtilType = (state:number, index, style) => {
     return (state === index ? ' ' +  style : '')
 }
 

@@ -18,6 +18,11 @@
     font-weight: 700;
 }
 
+.RoutingLinks__li_a:hover {
+    color: #1c2a39;
+    font-weight: 900;
+}
+
 .Active {
     color: #1c2a39;
     font-weight: 900;

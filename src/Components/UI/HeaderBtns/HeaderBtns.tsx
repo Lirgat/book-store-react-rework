@@ -4,6 +4,8 @@ import searchIcon from "../../../Assets/Icons/search.svg"
 import shopBagIcon from "../../../Assets/Icons/shopBag.svg"
 import style from "./style.module.css"
 
+// Компоннт с кнопками авторизации, поиска и корзины
+
 const HeaderBtns: FC = (): JSX.Element => {
   return (
     <div className={style.BtnList}>

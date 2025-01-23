@@ -4,10 +4,12 @@ import CompanyLogo from "../../UI/CompanyName/CompanyLogo.tsx"
 import RoutingLinks from "../../UI/RoutingLinks/RoutingLinks.tsx"
 import HeaderBtns from "../../UI/HeaderBtns/HeaderBtns.tsx"
 
+// Компонент фиксированного заголовка
+
 const Header:FC = ():JSX.Element => {
     return(
         <header className={style.Header}>
-            <CompanyLogo></CompanyLogo>
+            <CompanyLogo page={"books"}></CompanyLogo>
             <RoutingLinks></RoutingLinks>
             <HeaderBtns></HeaderBtns>
         </header>

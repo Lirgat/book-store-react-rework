@@ -4,11 +4,15 @@ import banner1 from "../../../Assets/Images/jpg/banner1.jpg";
 import banner2 from "../../../Assets/Images/jpg/banner2.jpg";
 import banner3 from "../../../Assets/Images/jpg/banner3.jpg";
 import indexCheck from "../../../Utils/indexCheck.ts";
+import ScreenSticker from "../../Dummies/ScreenStickers/ScreenSticker.tsx";
+
+//Слайдер и его функционал
+// Каждые 5 сек автоматически переключается
 
 const Slider: FC = (): JSX.Element => {
   const [slideIndex, setSlideIndex] = useState<number>(0);
 
-  const handleClick = (index) => {
+  const handleClick = (index):void => {
     setSlideIndex(index);
   };
 
@@ -26,7 +30,7 @@ const Slider: FC = (): JSX.Element => {
 
   return (
     <React.Fragment>
-      <div></div>
+      <ScreenSticker color={"pink"} innerText={"TOP\n100\nBOOKS\n2022"}></ScreenSticker>
       <div className={style.Slider}>
         <div
           className={
