@@ -1,0 +1,47 @@
+.SliderWrapper:not(.Active){
+    height: 0;
+}
+.SliderWrapper {
+    transform: scale(.05);
+    transition: .2s;
+    visibility: hidden;
+    width: 100%;
+}
+
+.SliderWrapper.Active {
+    transform: scale(1);
+    visibility: visible;
+}
+
+.SliderImg {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.Slider {
+    overflow: hidden;
+    width: 100%;
+}
+
+.SliderDots {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+.SliderDot {
+    background-color: rgba(160, 154, 223, .6);
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    height: 14px;
+    transition: .3s;
+    width: 14px;
+}
+
+.ActiveDot {
+    background-color: #9e98dc;
+    transform: scale(1.1);
+}

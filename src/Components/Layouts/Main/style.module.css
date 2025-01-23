@@ -1,0 +1,8 @@
+.PageListMain {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: space-around;
+  margin: 47px 11.11% 0;
+}
