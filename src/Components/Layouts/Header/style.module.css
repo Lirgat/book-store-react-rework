@@ -1,0 +1,16 @@
+.Header {
+  align-items: baseline;
+  background-color: #fff;
+  box-shadow: 0 7px 8px 0 rgba(34, 60, 80, 0.32);
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  height: 120px;
+  justify-content: space-between;
+  left: 0;
+  padding: 47px 11.11% 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999999;
+}

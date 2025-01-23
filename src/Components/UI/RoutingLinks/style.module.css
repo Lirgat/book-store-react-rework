@@ -1,0 +1,32 @@
+.Nav {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+}
+
+.RoutingLinks__li {
+    color: #5c6a79;
+    list-style-type: none;
+    font-weight: 700;
+}
+
+.RoutingLinks__li_a {
+    color: #5c6a79;
+    list-style-type: none;
+    font-weight: 700;
+}
+
+.Active {
+    color: #1c2a39;
+    font-weight: 900;
+}
+
+.Active, .RoutingLinks__li_a {
+    background-color: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: .3s;
+}
