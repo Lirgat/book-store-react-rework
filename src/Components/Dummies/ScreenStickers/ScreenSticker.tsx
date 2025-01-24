@@ -19,7 +19,7 @@ const ScreenSticker:FC<StickerPropsType> = ({color, innerText}):JSX.Element => {
         <p> 
         {innerText}
         </p>
-        <img src={arrow} alt="Стрелка" />
+        <img className={style.StickerArrow} src={arrow} alt="Стрелка" />
     </div>
   );
 };

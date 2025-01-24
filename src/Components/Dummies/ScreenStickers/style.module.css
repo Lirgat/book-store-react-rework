@@ -31,6 +31,14 @@
 .PurpleSticker:hover {
     background-color: #b7b0ff;
     transform: scale(1.05);
+    .StickerArrow {
+        transform: translateX(10px);
+        transition: .3s;
+    }
+}
+
+.StickerArrow {
+    transition: .3s;
 }
 
 .PinkSticker, .PurpleSticker {
@@ -40,4 +48,13 @@
     flex-direction: column;
     gap: 0;
     justify-content: flex-end;
+}
+
+.PinkSticker:hover {
+    background-color: #ff75e1;
+    transform: scale(1.05);
+    .StickerArrow {
+        transform: translateX(10px);
+        transition: .3s;
+    }
 }
