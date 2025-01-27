@@ -36,7 +36,7 @@ const RoutingLinks: FC = (): JSX.Element => {
     <nav>
       <ul className={style.Nav}>
         {routingLinksArray.map((link: routerLink) => (
-          <li className={style.RoutingLinks__li}>
+          <li key={link} className={style.RoutingLinks__li}>
             <a
               className={`${link.isActive === true ? style.Active : ""} ${
                 style.RoutingLinks__li_a

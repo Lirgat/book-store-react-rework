@@ -9,5 +9,5 @@ export interface RouterLink {
 }
 
 export interface CompanyNameTypeProp {
-    page: string | "BOOKS" | "AUDIOBOOKS" | "STATIONERY & GIFTS" | "BLOG"
+    page: string 
 }

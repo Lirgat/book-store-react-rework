@@ -1,13 +1,42 @@
-import React, { FC, JSX } from "react";
-import style from "./style.module.css"
-import Category from "../../UI/Category/Category";
+import React, { FC, JSX, useState } from "react";
+import style from "./style.module.css";
+import Category from "../../UI/Category/Category.tsx";
 
-const CategoryList:FC = ():JSX.Element => {
-    return(
-        <div className={style.CategoryList}>
-            
-        </div>
-    )
-}
+//Компонент колонки категорий
 
-export default CategoryList
+const CategoryList: FC = (): JSX.Element => {
+  const categories = [
+    "Art & Fashion",
+    "Biography",
+    "Business",
+    "Crafts & Hobbies",
+    "Drama",
+    "Fiction",
+    "Food & Drink",
+    "Health & Wellbeing",
+    "History & Politics",
+    "Humor",
+    "Poetry",
+    "Psychology",
+    "Science",
+    "Technology",
+    "Travel & Maps",
+  ];
+
+  const initialCategory = categories.length > 0 ? categories[0] : null
+  const [activeCategory, setActiveCategory] = useState<string | null>(initialCategory)
+
+  const handleCategoryClick = (category: string) => {
+    setActiveCategory(prevCategory => prevCategory === category ? null : category)
+  }
+
+  return(
+    <div className={style.CategoryList}>
+        {categories.map((category) => (
+            <Category key={category} category={category} isActive={activeCategory === category} onClick={() => handleCategoryClick(category)} />
+        ))}
+    </div>
+  );
+};
+
+export default CategoryList;

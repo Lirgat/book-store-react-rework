@@ -1,0 +1,26 @@
+.Category {
+    background-color: none;
+    color: #5c6a79;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .3s;
+    z-index: 200;
+}
+
+.ActiveCategory {
+    color: #1c2a39;
+    transform: scale(1.1);
+}
+
+.ActiveCategory::before {
+    background-color: #756ad3;
+    border-radius: 20px;
+    content: "";
+    height: 10px;
+    left: -20px;
+    position: absolute;
+    top: 6px;
+    width: 10px;
+}

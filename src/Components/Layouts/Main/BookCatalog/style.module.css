@@ -1,0 +1,8 @@
+.BookCatalog {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 70px;
+    justify-content: unset;
+    margin: 100px 11.11% 0;
+}
