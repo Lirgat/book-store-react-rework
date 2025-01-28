@@ -5,8 +5,13 @@
     font-size: 18px;
     font-weight: 700;
     text-decoration: none;
-    transition: .3s;
+    transition: .2s;
     z-index: 200;
+}
+
+.Category:hover {
+    color: #1c2a39;
+    transform: scale(1.1);
 }
 
 .ActiveCategory {
